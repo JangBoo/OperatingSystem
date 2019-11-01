@@ -1,0 +1,41 @@
+"C:\Program Files\Java\jdk1.8.0_144\bin\java" -Didea.launcher.port=7545 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.5\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Users\jangh\Desktop\OperatingSystem\OS2\out\production\OS2;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.5\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain StackManager
+Main thread starts executing.
+Initial value of top = 3.
+Initial value of stack top = d.
+Main thread will now fork several threads.
+Two Consumer threads have been created.
+Two Producer threads have been created.
+One CharStackProber thread has been created.
+Consumer thread [TID=1] starts executing.
+Producer thread [TID=3] starts executing.
+Consumer thread [TID=2] starts executing.
+Consumer thread [TID=1] pops character =d
+Producer thread [TID=3] pushes character =d
+CharStackProber thread [TID=5] starts executing.
+Producer thread [TID=4] starts executing.
+Consumer thread [TID=2] pops character =d
+Consumer thread [TID=1] pops character =c
+Producer thread [TID=3] pushes character =c
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+Producer thread [TID=4] pushes character =d
+Consumer thread [TID=2] pops character =d
+Consumer thread [TID=1] pops character =c
+Consumer thread [TID=1] terminates.
+Producer thread [TID=3] pushes character =c
+Producer thread [TID=3] terminates.
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+Producer thread [TID=4] pushes character =d
+Consumer thread [TID=2] pops character =d
+Consumer thread [TID=2] terminates.
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+Producer thread [TID=4] pushes character =d
+Producer thread [TID=4] terminates.
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+System terminates normally.
+Final value of top = 3.
+Final value of stack top = d.
+Final value of stack top-1 = c.
+
+Process finished with exit code 0

@@ -1,0 +1,2 @@
+it doesn't meet the condition. such as initilization should be above 0 and -- should be before it goes to waiting.
+code is edited 

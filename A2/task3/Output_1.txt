@@ -1,0 +1,151 @@
+"C:\Program Files\Java\jdk1.8.0_144\bin\java" -Didea.launcher.port=7540 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.5\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Users\jangh\Desktop\OperatingSystem\OS2\out\production\OS2;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 2016.2.5\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain StackManager
+Main thread starts executing.
+Initial value of top = 3.
+Initial value of stack top = d.
+Main thread will now fork several threads.
+Two Consumer threads have been created.
+Two Producer threads have been created.
+One CharStackProber thread has been created.
+Consumer thread [TID=1] starts executing.
+start for loop, consumer  i:  0, thread : 1going into waiting
+Producer thread [TID=3] starts executing.
+Consumer thread [TID=1] pops character =d
+start for loop, producer  i  :0 thread  3going into waiting
+Consumer thread [TID=2] starts executing.
+start for loop, consumer  i:  0, thread : 2going into waiting
+Producer thread [TID=3] pushes character =d
+start for loop, consumer  i:  1, thread : 1going into waiting
+CharStackProber thread [TID=5] starts executing.
+Producer thread [TID=4] starts executing.
+start for loop, producer  i  :0 thread  4going into waiting
+start for loop, charstack i: 0, thread: 5 going into waiting
+1 threads waiting on this semaphore. TID: [2]
+2 threads waiting on this semaphore. TID: [2, 5]
+3 threads waiting on this semaphore. TID: [2, 5, 4]
+4 threads waiting on this semaphore. TID: [2, 5, 4, 1]
+start for loop, producer  i  :1 thread  3going into waiting
+3 threads waiting on this semaphore. TID: [5, 4, 1]
+Consumer thread [TID=2] pops character =d
+4 threads waiting on this semaphore. TID: [5, 4, 1, 3]
+start for loop, consumer  i:  1, thread : 2going into waiting
+3 threads waiting on this semaphore. TID: [4, 1, 3]
+4 threads waiting on this semaphore. TID: [4, 1, 3, 2]
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 1, thread: 5 going into waiting
+3 threads waiting on this semaphore. TID: [1, 3, 2]
+Producer thread [TID=4] pushes character =d
+4 threads waiting on this semaphore. TID: [1, 3, 2, 5]
+start for loop, producer  i  :1 thread  4going into waiting
+3 threads waiting on this semaphore. TID: [3, 2, 5]
+Consumer thread [TID=1] pops character =d
+4 threads waiting on this semaphore. TID: [3, 2, 5, 4]
+start for loop, consumer  i:  2, thread : 1going into waiting
+3 threads waiting on this semaphore. TID: [2, 5, 4]
+Producer thread [TID=3] pushes character =d
+4 threads waiting on this semaphore. TID: [2, 5, 4, 1]
+start for loop, producer  i  :2 thread  3going into waiting
+3 threads waiting on this semaphore. TID: [5, 4, 1]
+Consumer thread [TID=2] pops character =d
+4 threads waiting on this semaphore. TID: [5, 4, 1, 3]
+start for loop, consumer  i:  2, thread : 2going into waiting
+3 threads waiting on this semaphore. TID: [4, 1, 3]
+4 threads waiting on this semaphore. TID: [4, 1, 3, 2]
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 2, thread: 5 going into waiting
+3 threads waiting on this semaphore. TID: [1, 3, 2]
+Producer thread [TID=4] pushes character =d
+4 threads waiting on this semaphore. TID: [1, 3, 2, 5]
+start for loop, producer  i  :2 thread  4going into waiting
+3 threads waiting on this semaphore. TID: [3, 2, 5]
+Consumer thread [TID=1] pops character =d
+4 threads waiting on this semaphore. TID: [3, 2, 5, 4]
+Consumer thread [TID=1] terminates.
+3 threads waiting on this semaphore. TID: [2, 5, 4]
+Producer thread [TID=3] pushes character =d
+Producer thread [TID=3] terminates.
+2 threads waiting on this semaphore. TID: [5, 4]
+Consumer thread [TID=2] pops character =d
+Consumer thread [TID=2] terminates.
+1 threads waiting on this semaphore. TID: [4]
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 3, thread: 5 going into waiting
+0 threads waiting on this semaphore. TID: []
+Producer thread [TID=4] pushes character =d
+1 threads waiting on this semaphore. TID: [5]
+Producer thread [TID=4] terminates.
+0 threads waiting on this semaphore. TID: []
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 4, thread: 5 going into waiting
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 5, thread: 5 going into waiting
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+System terminates normally.
+Final value of top = 3.
+Final value of stack top = d.
+Final value of stack top-1 = c.
+
+Process finished with exit code 0
+
+
+
+
+
+
+Main thread starts executing.
+Initial value of top = 3.
+Initial value of stack top = d.
+Main thread will now fork several threads.
+Two Consumer threads have been created.
+Two Producer threads have been created.
+One CharStackProber thread has been created.
+Consumer thread [TID=1] starts executing.
+Producer thread [TID=3] starts executing.
+start for loop, consumer  i:  0, thread : 1going into waiting
+Consumer thread [TID=2] starts executing.
+start for loop, producer  i  :0 thread  3going into waiting
+Producer thread [TID=4] starts executing.
+start for loop, producer  i  :0 thread  4going into waiting
+start for loop, consumer  i:  0, thread : 2going into waiting
+Consumer thread [TID=1] pops character =d
+CharStackProber thread [TID=5] starts executing.
+start for loop, consumer  i:  1, thread : 1going into waiting
+start for loop, charstack i: 0, thread: 5 going into waiting
+Producer thread [TID=3] pushes character =d
+start for loop, producer  i  :1 thread  3going into waiting
+Producer thread [TID=4] pushes character =e
+start for loop, producer  i  :1 thread  4going into waiting
+Consumer thread [TID=2] pops character =e
+start for loop, consumer  i:  1, thread : 2going into waiting
+Consumer thread [TID=1] pops character =d
+start for loop, consumer  i:  2, thread : 1going into waiting
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 1, thread: 5 going into waiting
+Producer thread [TID=3] pushes character =d
+start for loop, producer  i  :2 thread  3going into waiting
+Producer thread [TID=4] pushes character =e
+start for loop, producer  i  :2 thread  4going into waiting
+Consumer thread [TID=2] pops character =e
+start for loop, consumer  i:  2, thread : 2going into waiting
+Consumer thread [TID=1] pops character =d
+Consumer thread [TID=1] terminates.
+Stack S = ([a],[b],[c],[$],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 2, thread: 5 going into waiting
+Producer thread [TID=3] pushes character =d
+Producer thread [TID=3] terminates.
+Producer thread [TID=4] pushes character =e
+Producer thread [TID=4] terminates.
+Consumer thread [TID=2] pops character =e
+Consumer thread [TID=2] terminates.
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 3, thread: 5 going into waiting
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 4, thread: 5 going into waiting
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+start for loop, charstack i: 5, thread: 5 going into waiting
+Stack S = ([a],[b],[c],[d],[$],[$],[$],[$],[$],[$])
+System terminates normally.
+Final value of top = 3.
+Final value of stack top = d.
+Final value of stack top-1 = c.
+
+Process finished with exit code 0
